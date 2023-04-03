@@ -1,6 +1,37 @@
 @import "../../scss/global.scss";
 
 
-body {
-  color: red;
+#site-header {
+  background-color: white;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    max-width: 95vw;
+
+    @media (max-width: 768px) {
+      max-width: unset;
+      width: 90%;
+    }
+
+    .nav-logo {
+      width: 5rem;
+    }
+  }
+
+  .nav-links {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+
+  }
+
+  .nav-column {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 4rem 2rem 0rem;
+  }
 }

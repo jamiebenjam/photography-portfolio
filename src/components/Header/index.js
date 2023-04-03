@@ -11,34 +11,22 @@ const Header = () => {
   return (
     <Navbar fixed="top" expand="lg" id="site-header">
       <Container className="nav-container">
-        <Navbar.Brand href="/">
-          <Image src="./images/jbp.png" className="nav-logo" />
-        </Navbar.Brand>
         <Navbar.Toggle aria-controls="site-header" />
         <Navbar.Collapse className="nav-links">
-          <Nav>
-            <Nav.Link href="portrait">
-              portrait<span className="nav-divider">|</span>
-            </Nav.Link>
-            <Nav.Link href="product">
-              product<span className="nav-divider">|</span>
-            </Nav.Link>
-            <Nav.Link href="people-product">
-              people + product<span className="nav-divider">|</span>
-            </Nav.Link>
-            <Nav.Link href="influencer">
-              influencer<span className="nav-divider">|</span>
-            </Nav.Link>
-            <Nav.Link href="couple">
-              couple<span className="nav-divider">|</span>
-            </Nav.Link>
-            <Nav.Link href="wedding">
-              wedding<span className="nav-divider">|</span>
-            </Nav.Link>
-            <Nav.Link href="event">
-              event<span className="nav-divider"></span>
-            </Nav.Link>
-          </Nav>
+          <div className="nav-links-container">
+            <Nav className="nav-column">
+              <Navbar.Brand href="/">
+                <Image src="./images/jbp.png" className="nav-logo" />
+              </Navbar.Brand>
+              <Nav.Link href="portrait">portrait</Nav.Link>
+              <Nav.Link href="product">product</Nav.Link>
+              <Nav.Link href="people-product">people + product</Nav.Link>
+              <Nav.Link href="influencer">influencer</Nav.Link>
+              <Nav.Link href="couple">couple</Nav.Link>
+              <Nav.Link href="wedding">wedding</Nav.Link>
+              <Nav.Link href="event">event</Nav.Link>
+            </Nav>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
