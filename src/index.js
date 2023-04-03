@@ -1,13 +1,20 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './global.scss';
-import App from './App';
+import LandingPage from './pages';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<LandingPage />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
