@@ -6,6 +6,7 @@ import LandingPage from './pages';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Portrait from './pages/portrait';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route index element={<LandingPage />} />
+        <Route path="portrait" element={<Portrait />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
