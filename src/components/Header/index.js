@@ -1,9 +1,11 @@
 import React from 'react';
 
-import { Image } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { BsInstagram } from 'react-icons/bs';
+import { MdOutlineMail } from 'react-icons/md';
 
 import './index.scss';
 
@@ -15,9 +17,9 @@ const Header = () => {
         <Navbar.Collapse className="nav-links">
           <div className="nav-links-container">
             <Nav className="nav-column">
-              <Navbar.Brand href="/">
-                <Image src="./images/jbp.png" className="nav-logo" />
-              </Navbar.Brand>
+              <Nav.Link href="/" className="nav-logo">
+                jbp
+              </Nav.Link>
               <Nav.Link href="portrait">portrait</Nav.Link>
               <Nav.Link href="product">product</Nav.Link>
               <Nav.Link href="people-product">people + product</Nav.Link>
@@ -26,6 +28,16 @@ const Header = () => {
               <Nav.Link href="wedding">wedding</Nav.Link>
               <Nav.Link href="event">event</Nav.Link>
             </Nav>
+            <Button variant="outline-dark" className="round-btn">
+              <a href="https://www.instagram.com/periodcoll/">
+                <BsInstagram size={15} className="social-icons" />
+              </a>
+            </Button>
+            <Button variant="outline-dark" className="round-btn">
+              <a href="https://www.linkedin.com/company/the-period-collective/">
+                <MdOutlineMail size={15} className="social-icons" />
+              </a>
+            </Button>
           </div>
         </Navbar.Collapse>
       </Container>
