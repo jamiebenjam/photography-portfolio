@@ -28,16 +28,18 @@ const Header = () => {
               <Nav.Link href="wedding">wedding</Nav.Link>
               <Nav.Link href="event">event</Nav.Link>
             </Nav>
-            <Button variant="outline-dark" className="round-btn">
-              <a href="https://www.instagram.com/periodcoll/">
-                <BsInstagram size={15} className="social-icons" />
-              </a>
-            </Button>
-            <Button variant="outline-dark" className="round-btn">
-              <a href="https://www.linkedin.com/company/the-period-collective/">
-                <MdOutlineMail size={15} className="social-icons" />
-              </a>
-            </Button>
+            <div className="social-container">
+              <Button variant="outline-dark" className="round-btn">
+                <a href="https://www.instagram.com/jamiebenjam/">
+                  <BsInstagram size={12} className="social-icons" />
+                </a>
+              </Button>
+              <Button variant="outline-dark" className="round-btn">
+                <a href="mailto:jamiebenjaminphotography@gmail.com">
+                  <MdOutlineMail size={12} className="social-icons" />
+                </a>
+              </Button>
+            </div>
           </div>
         </Navbar.Collapse>
       </Container>

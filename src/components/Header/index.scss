@@ -5,6 +5,7 @@
   background-color: white;
   font-family: TT;
 
+
   .nav-container {
     display: flex;
     justify-content: space-between;
@@ -42,14 +43,33 @@
     margin: 4rem 1.5rem 0rem;
   }
 
+  .social-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 28px;
+  }
+
   .social-icons {
     color: white;
   }
 
   .round-btn {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #6e5548;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  .round-btn:first-of-type {
+    margin-right: 5px;
+  }
+
+  .round-btn:last-of-type {
+    margin-left: 5px;
+  }
+
 }
