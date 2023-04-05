@@ -7,3 +7,30 @@
   src: url('TT Jenevers Trial Light.otf');
 }
 
+.gallery-container {
+  display: flex;
+  margin-top: 20rem;
+  min-height: 400px;
+  margin-left: 15rem;
+  margin-right: 2.5rem;
+  height: 100%;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.photo-row {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+}
+
+.photo-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 33.3%;
+}
+
